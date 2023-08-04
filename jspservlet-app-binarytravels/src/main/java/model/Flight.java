@@ -2,69 +2,68 @@ package model;
 
 import java.time.LocalDate;
 
-public class Flight{
-    private int noOfPersons;
-    private String classType;
-    private int rates;
-    private LocalDate from;
-    private LocalDate to;
-    private String triptype;
+public class Flight {
+	private int noOfPersons;
+	private String classType;
+	private int rates;
+	private LocalDate from;
+	private LocalDate to;
+	private String triptype;
 
-    public int getNoOfPersons() {
-        return noOfPersons;
-    }
+	public Flight(int noOfPersons, String classType, int rates, LocalDate from, LocalDate to, String triptype) {
+		this.noOfPersons = noOfPersons;
+		this.classType = classType;
+		this.rates = rates;
+		this.from = from;
+		this.to = to;
+		this.triptype = triptype;
+	}
 
-    public void setNoOfPersons(int noOfPersons) {
-        this.noOfPersons = noOfPersons;
-    }
+	public int getNoOfPersons() {
+		return noOfPersons;
+	}
 
-    public String getClassType() {
-        return classType;
-    }
+	public void setNoOfPersons(int noOfPersons) {
+		this.noOfPersons = noOfPersons;
+	}
 
-    public void setClassType(String classType) {
-        this.classType = classType;
-    }
+	public String getClassType() {
+		return classType;
+	}
 
-    public int getRates() {
-        return rates;
-    }
+	public void setClassType(String classType) {
+		this.classType = classType;
+	}
 
-    public void setRates(int rates) {
-        this.rates = rates;
-    }
+	public int getRates() {
+		return rates;
+	}
 
-    public LocalDate getFrom() {
-        return from;
-    }
+	public void setRates(int rates) {
+		this.rates = rates;
+	}
 
-    public void setFrom(LocalDate from) {
-        this.from = from;
-    }
+	public LocalDate getFrom() {
+		return from;
+	}
 
-    public LocalDate getTo() {
-        return to;
-    }
+	public void setFrom(LocalDate from) {
+		this.from = from;
+	}
 
-    public void setTo(LocalDate to) {
-        this.to = to;
-    }
+	public LocalDate getTo() {
+		return to;
+	}
 
-    public String getTriptype() {
-        return triptype;
-    }
+	public void setTo(LocalDate to){
+		this.to = to;
+	}
 
-    public void setTriptype(String triptype) {
-        this.triptype = triptype;
-    }
+	public String getTriptype() {
+		return triptype;
+	}
 
-    public Flight(int noOfPersons, String classType, int rates, LocalDate from, LocalDate to, String triptype) {
-        this.noOfPersons = noOfPersons;
-        this.classType = classType;
-        this.rates = rates;
-        this.from = from;
-        this.to = to;
-        this.triptype = triptype;
-    }
-    	
-}
+	public void setTripType(String triptype) {
+		this.triptype = triptype;
+	}
+}	
