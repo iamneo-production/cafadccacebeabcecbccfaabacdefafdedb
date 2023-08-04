@@ -1,9 +1,5 @@
 
 
-import model.Bus;
-import model.Flight;
-import model.Hotel;
-import model.Train;
 
 
 public class FareCalculator extends Booking {
@@ -20,9 +16,7 @@ public class FareCalculator extends Booking {
 	    }
 
 	    //Calculate the total fare
-	    double totalFare = hotel.getRates() * hotel.getNoOfPersons();
-
-	    return totalFare;
+	    return hotel.getRates() * hotel.getNoOfPersons();
 	}
 
   public double book(Flight flight) {
@@ -44,14 +38,10 @@ public class FareCalculator extends Booking {
     return totalFare;
   }
   public double book(Train train) {
-      double totalFare = train.getNoOfPersons()*train.getRates();
-      
-      return totalFare;
+      return train.getNoOfPersons()*train.getRates();
   }
 
   public double book(Bus bus) {
-      double totalFare = bus.getNoOfPersons()*bus.getRates();
-
-      return totalFare;
+      return bus.getNoOfPersons()*bus.getRates();
   }
 }
