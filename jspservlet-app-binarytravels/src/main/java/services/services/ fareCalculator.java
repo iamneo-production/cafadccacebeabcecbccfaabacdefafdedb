@@ -25,8 +25,7 @@ public class FareCalculator extends Booking{
     }
 
     public double book(Bus bus) {
-        double totalFare = booking(bus.getNoOfPersons(),bus.getRates());
-        return totalFare;
+        return booking(bus.getNoOfPersons(),bus.getRates());
     }
 
     public double book(Hotel hotel) {
@@ -38,8 +37,7 @@ public class FareCalculator extends Booking{
     }
 
     public double book(Train train) {
-        double totalFare = booking(train.getNoOfPersons(),train.getRates());
-        return totalFare;
+        return booking(train.getNoOfPersons(),train.getRates());
     }
 
 }
