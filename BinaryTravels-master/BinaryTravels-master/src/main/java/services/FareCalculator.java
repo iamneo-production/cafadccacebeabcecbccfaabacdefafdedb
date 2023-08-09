@@ -33,7 +33,7 @@ public class FareCalculator extends Booking {
     } else {
       // For round trips Start date should be less than return date
       if (flight.getFrom().isAfter(flight.getTo())) {
-        System.out.println("For round trips Start date should be less than return date.");
+        System.err.println("For round trips Start date should be less than return date.");
         return 0;
       }
       totalFare =flight.getRates() * 2;
